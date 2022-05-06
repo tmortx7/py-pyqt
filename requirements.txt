@@ -1,2 +1,5 @@
 PyQt5
 PyQt5Designer
+sqlite3
+sqlalchemy
+bcrypt
