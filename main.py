@@ -73,7 +73,6 @@ class CreateAccScreen(QDialog):
         else:
             conn = sqlite3.connect("shop_data.db")
             cur = conn.cursor()
-
             user_info = [user, password]
             cur.execute(
                 'INSERT INTO login_info (username, password) VALUES (?,?)', user_info)
