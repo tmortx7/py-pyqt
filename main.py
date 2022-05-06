@@ -4,10 +4,23 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget
 from PyQt5.QtGui import QPixmap
 
+
 class WelcomeScreen(QDialog):
-  def __init__(self):
-    super(WelcomeScreen, self).__init__()
-    loadUi("welcomescreen.ui", self)
+    def __init__(self):
+        super(WelcomeScreen, self).__init__()
+        loadUi("welcomescreen.ui", self)
+        self.login.clicked.connect(self.gotologin)
+
+    def gotologin(self):
+          login = LoginScreen()
+          widget.addWidget(login)
+          widget.setCurrentIndex(widget.currentIndex()+1)
+
+
+class LoginScreen(QDialog):
+    def __init__(self):
+        super(LoginScreen, self).__init__()
+        loadUi("login.ui",self)
 
 # main
 app = QApplication(sys.argv)

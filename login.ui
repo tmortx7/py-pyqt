@@ -25,8 +25,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>90</y>
+      <x>180</x>
+      <y>70</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -40,7 +40,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Welcome</string>
+     <string>Login</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -49,14 +49,14 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>120</y>
+      <x>210</x>
+      <y>110</y>
       <width>201</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Sign in or create a new account</string>
+     <string>Sign in to your existing account</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -66,7 +66,7 @@
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>160</y>
+      <y>260</y>
       <width>150</width>
       <height>25</height>
      </rect>
@@ -75,17 +75,50 @@
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="login_2">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>170</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>220</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>150</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>username</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>240</x>
       <y>200</y>
-      <width>150</width>
-      <height>25</height>
+      <width>47</width>
+      <height>13</height>
      </rect>
     </property>
     <property name="text">
-     <string>Create a new account</string>
+     <string>password</string>
     </property>
    </widget>
   </widget>
